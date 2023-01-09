@@ -1,0 +1,1 @@
+# homicidio_democracia_autocracia
