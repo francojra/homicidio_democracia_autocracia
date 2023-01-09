@@ -78,3 +78,22 @@ ggplot(hom2, aes(x = Year, y = por_hom,
        color = "Países") +
   theme_ipsum(axis_text_size = 14, axis_title_size = 16) +
   theme(axis.text = element_text(color = "black"))
+
+ggplot(hom3, aes(x = Year, y = por_hom, 
+                 group = Entity, color = Entity)) +
+  geom_line(size = 2) +
+  scale_color_manual(values = c('#1B9E77', '#999999','#E69F00'),
+                     labels = c("Brasil", "China", "Estados Unidos")) +
+  labs(x = "Tempo (anos)", 
+       y = "Mortes por homicídio (%)",
+       color = "Países") +
+  theme_light() +
+  theme(axis.title = element_text(size = 18),
+        axis.text = element_text(color = "black", size = 15),
+        legend.text = element_text(size = 12))
+  
+  
+  
+  
+  
+  
