@@ -17,6 +17,13 @@ library(ggthemes)
 
 # Carregar dados ---------------------------------------------------------------------------------------------------------------------------
 
+hom <- read.csv("share-of-deaths-homicides.csv")
+view(hom)
+names(hom)
 
+# Manipular dados --------------------------------------------------------------------------------------------------------------------------
 
-
+hom <- hom %>%
+  select(-Code) %>%
+  rename(por_hom = Deaths...Interpersonal.violence...Sex..Both...Age..All.Ages..Percent.) %>%
+  view()
