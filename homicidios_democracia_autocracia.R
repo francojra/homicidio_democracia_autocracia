@@ -66,5 +66,15 @@ ggplot(hom1, aes(x = fct_reorder(Entity, media), y = media, fill = Entity)) +
 
 ggplot(hom2, aes(x = Year, y = por_hom, 
                  group = Entity, color = Entity)) +
-  geom_point() +
-  geom_line()
+  geom_point(shape = 15, size = 2.5) +
+  geom_line(size = 1.2) +
+  scale_color_manual(values = c("#88CCEE", "#CC6677",
+                               "#DDCC77", "#117733",
+                               "#332288", "#AA4499"),
+                     labels = c("China", "Cuba", "Alemanha",
+                                "Japão", "Coreia do Norte", "Estados Unidos")) +
+  labs(x = "Tempo (anos)", 
+       y = "Mortes por homicídio (%)",
+       color = "Países") +
+  theme_ipsum(axis_text_size = 14, axis_title_size = 16) +
+  theme(axis.text = element_text(color = "black"))
