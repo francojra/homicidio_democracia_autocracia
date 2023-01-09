@@ -27,3 +27,25 @@ hom <- hom %>%
   select(-Code) %>%
   rename(por_hom = Deaths...Interpersonal.violence...Sex..Both...Age..All.Ages..Percent.) %>%
   view()
+
+hom1 <- hom %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  group_by(Entity) %>%
+  summarise(media = mean(por_hom),
+            sd = sd(por_hom), n = n(),
+            se = sd/sqrt(n)) %>%
+  view()
+
+hom2 <- hom %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  view()
+
+hom3 <- hom %>%
+  filter(Entity %in% c("United States", "Brazil", "China")) %>%
+  view()
+
+# Gráficos ---------------------------------------------------------------------------------------------------------------------------------
+
+
