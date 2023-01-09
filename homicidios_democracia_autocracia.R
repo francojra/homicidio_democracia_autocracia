@@ -63,3 +63,8 @@ ggplot(hom1, aes(x = fct_reorder(Entity, media), y = media, fill = Entity)) +
   labs(x = "Países", y = "Mortes por homicídio (%)") +
   theme_ipsum(axis_text_size = 14, axis_title_size = 16) +
   theme(legend.position = "none", axis.text = element_text(color = "black"))
+
+ggplot(hom2, aes(x = Year, y = por_hom, 
+                 group = Entity, color = Entity)) +
+  geom_point() +
+  geom_line()
