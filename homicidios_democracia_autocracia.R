@@ -6,7 +6,17 @@
 
 # Sobre os dados ---------------------------------------------------------------------------------------------------------------------------
 
-### 
+### Mais que 400 mil pessoas morrem por homicídio todos os anos. Homicídios é uma das maiores causas
+### de morte globalmente - em alguns países, é uma das principais causas de morte.
+
+### O Global Burden of Disease é o maior estudo global sobre causas de morte e doenças publicado
+### no jornal médico The Lancet. A estimativa do estudo sobre mortes anuais de cada causa são apresentados.
+### Pouco mais de 415 mil pessoas morreram por homicídio em 2019. Isso foi 3x o número de mortos
+### em conflitos armados e terrorismo.
+
+### Em alguns países, homícidio é uma das maiores causas de mortes. Porcentagem de homicídios em alguns
+### países da América Latina é particularmente alta. Em 2017, homicídio foi a terceira maior causa
+### de morte na Venezuela, a quarta em Honduras e a quinta na Guatemala.
 
 # Carregar pacotes -------------------------------------------------------------------------------------------------------------------------
 
